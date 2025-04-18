@@ -4080,6 +4080,7 @@ figcaption {
 .text-block-4 {
   font-size: 2rem;
   line-height: 2rem;
+  display: flex;
 }
 
 @media screen and (max-width: 991px) {
@@ -4883,6 +4884,10 @@ figcaption {
   .flex-block {
     display: none;
   }
+
+  .text-block-4 {
+    white-space: pre-wrap;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -5025,6 +5030,14 @@ figcaption {
 
   .nav-head__button-2 {
     border: 1px solid #fff;
+  }
+
+  .dropdown-toggle {
+    padding-left: 0;
+  }
+
+  .text-block-4 {
+    white-space: pre-wrap;
   }
 }
 

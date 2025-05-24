@@ -2041,6 +2041,118 @@ textarea.w-input, textarea.w-select {
   display: grid;
 }
 
+@font-face {
+  font-family: InterTight;
+  src: url("../images/intertight-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: InterTight;
+  src: url("../images/intertight-bolditalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: InterTight;
+  src: url("../images/intertight-black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: InterTight;
+  src: url("../images/intertight-blackitalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: InterTight;
+  src: url("../images/intertight-extrabold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: InterTight;
+  src: url("../images/intertight-extrabolditalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: InterTight;
+  src: url("../images/intertight-semibolditalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: InterTight;
+  src: url("../images/intertight-semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: InterTight;
+  src: url("../images/intertight-mediumitalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: InterTight;
+  src: url("../images/intertight-medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: InterTight;
+  src: url("../images/intertight-italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: InterTight;
+  src: url("../images/intertight-regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: InterTight;
+  src: url("../images/intertight-lightitalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: InterTight;
+  src: url("../images/intertight-light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --color--c1: #000;
   --s5-white\<deleted\|variable-8f10cdec\>: white;
@@ -4052,8 +4164,13 @@ figcaption {
   display: none;
 }
 
-.dropdown-toggle, .dropdown {
+.dropdown-toggle {
   width: 100%;
+}
+
+.dropdown {
+  width: 100%;
+  display: block;
 }
 
 .dropdown-list {
@@ -4072,12 +4189,17 @@ figcaption {
 }
 
 .section-2 {
-  margin-top: 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin: auto 1rem;
+}
+
+.section-2.max-width-regular {
+  margin-left: 11rem;
+  margin-right: 11rem;
 }
 
 .text-block-4 {
+  white-space: pre-wrap;
+  overflow-wrap: normal;
   font-size: 2rem;
   line-height: 2rem;
   display: flex;
@@ -4384,6 +4506,12 @@ figcaption {
 
   .list {
     padding-left: 20px;
+  }
+
+  .section-2 {
+    white-space: pre-wrap;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
@@ -4896,6 +5024,8 @@ figcaption {
   }
 
   .open-nav {
+    z-index: 100;
+    border: 1px solid var(--color--c2);
     display: flex;
   }
 
@@ -5036,6 +5166,11 @@ figcaption {
     padding-left: 0;
   }
 
+  .section-2 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
   .text-block-4 {
     white-space: pre-wrap;
   }
@@ -5053,103 +5188,4 @@ figcaption {
   #w-node-fc6c078f-56eb-4cbd-52f1-841a83d0bc29-8421425f {
     grid-area: span 1 / span 1 / span 1 / span 1;
   }
-}
-
-@font-face {
-  font-family: 'InterTight';
-  src: url('../images/intertight-bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'InterTight';
-  src: url('../images/intertight-bolditalic.ttf') format('truetype');
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'InterTight';
-  src: url('../images/intertight-black.ttf') format('truetype');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'InterTight';
-  src: url('../images/intertight-blackitalic.ttf') format('truetype');
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'InterTight';
-  src: url('../images/intertight-extrabold.ttf') format('truetype');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'InterTight';
-  src: url('../images/intertight-extrabolditalic.ttf') format('truetype');
-  font-weight: 800;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'InterTight';
-  src: url('../images/intertight-semibolditalic.ttf') format('truetype');
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'InterTight';
-  src: url('../images/intertight-semibold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'InterTight';
-  src: url('../images/intertight-mediumitalic.ttf') format('truetype');
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'InterTight';
-  src: url('../images/intertight-medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'InterTight';
-  src: url('../images/intertight-italic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'InterTight';
-  src: url('../images/intertight-regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'InterTight';
-  src: url('../images/intertight-lightitalic.ttf') format('truetype');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'InterTight';
-  src: url('../images/intertight-light.ttf') format('truetype');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
 }
